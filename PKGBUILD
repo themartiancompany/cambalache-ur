@@ -3,8 +3,8 @@
 # shellcheck shell=bash disable=SC2034,SC2164
 
 pkgname=cambalache
-pkgver=0.90.2
-pkgrel=2
+pkgver=0.90.4
+pkgrel=1
 pkgdesc="A new RAD tool for Gtk 4 and 3"
 arch=('x86_64')
 url="https://gitlab.gnome.org/jpu/cambalache"
@@ -13,7 +13,7 @@ depends=('dconf' 'gdk-pixbuf2' 'glib2' 'gtk3' 'gtk4' 'gtksourceview5' 'hicolor-i
          'libhandy' 'pango' 'python-gobject' 'python-lxml' 'webkit2gtk-4.1' 'webkitgtk-6.0')
 makedepends=('gobject-introspection' 'meson' 'ninja')
 source=("${url}/-/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha512sums=('f962260b4be8f77f1036afe90e9489a3f9fda3d4a3c7786005c113fa434a4bc598094cfc799deefca2a8b935c7308aea995626e8e32089b7e06b256fe6098291')
+sha512sums=('ac8b45b8ab45bb2ef9def2d9dbe75eb22bd2a2542af00c014934ef0ce9c54c98146b4a25b7066526de4fc772b40d97380e880b6d2f6cf16df76868e743e7d695')
 
 build() {
   arch-meson "${pkgname}-${pkgver}" build
