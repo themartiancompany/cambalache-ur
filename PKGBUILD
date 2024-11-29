@@ -3,19 +3,19 @@
 # shellcheck shell=bash disable=SC2034,SC2164
 
 pkgname=cambalache
-pkgver=0.92.2
+pkgver=0.94.0
 pkgrel=1
 pkgdesc="A new RAD tool for Gtk 4 and 3"
 arch=('x86_64')
 url="https://gitlab.gnome.org/jpu/cambalache"
 license=('LGPL-2.1-only')
-depends=('cairo' 'dconf' 'gdk-pixbuf2' 'glib2' 'gtk3' 'gtk4' 'gtksourceview5'
-         'hicolor-icon-theme' 'libadwaita' 'libhandy' 'libxkbcommon' 'pango'
-         'pixman' 'python' 'python-gobject' 'python-lxml' 'wayland' 'webkit2gtk-4.1'
-         'webkitgtk-6.0' 'wlroots>=0.18.0')
+depends=('at-spi2-core' 'cairo' 'dconf' 'gdk-pixbuf2' 'glib2' 'gtk3' 'gtk4'
+         'gtksourceview5' 'hicolor-icon-theme' 'libadwaita' 'libhandy'
+         'libxkbcommon' 'pango' 'pixman' 'python' 'python-gobject' 'python-lxml'
+         'wayland' 'webkit2gtk-4.1' 'webkitgtk-6.0' 'wlroots>=0.18.0')
 makedepends=('git' 'gobject-introspection' 'meson' 'ninja' 'wayland-protocols')
 source=("${url}/-/archive/${pkgver}/${pkgname}-${pkgver}.tar.gz")
-sha512sums=('791594d9b3355ee45cd269594e5dc9353f9e3c832e203d07c09a6bd144b87acb922b5952beb62448ed253917daeb79b05523cef51c98489d1dd6eb596485932c')
+sha512sums=('019edd2cb38a6fd578007f90544ff8a76f35bff9cea7b8d5c585278306267088d3d6d221e6c4ea11a979b045a5c6d7c3ca4fdbb50604bb7d35b92f75cc52de28')
 
 prepare() {
   # Use project's Casilda dependency
